@@ -6,8 +6,8 @@ public interface Learner {
 
     }
 
-    public static  getTotalStudyTime(){
-        return double;
+    public static double getTotalStudyTime(){
+        return getTotalStudyTime();
     }
 
 
