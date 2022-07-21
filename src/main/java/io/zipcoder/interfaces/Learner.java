@@ -10,5 +10,4 @@ public interface Learner {
         return getTotalStudyTime();
     }
 
-
 }
