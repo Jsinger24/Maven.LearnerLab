@@ -27,20 +27,20 @@ public class People {
         return null;
     }
 
-    public void remove(Person person){
-        for (Person holder: personList){
-            if (person == holder){
-                personList.remove(holder);
+    public void remove(Person person) {
+
+        for (int i = 0; i < personList.size(); i++) {
+            if (person == personList.get(i)) {
+                personList.remove(personList.get(i));
             }
         }
-
-}
+    }
 
     public void remove(long id){
-        for (Person holder: personList) {
-            if(holder.getId() ==  id){
-                personList.remove(holder);
-        }
+        for (int i = 0; i < personList.size(); i++){
+            if (id == personList.get(i).getId()){
+                personList.remove(personList.get(i));
+            }
         }
     }
 
