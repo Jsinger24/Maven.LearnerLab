@@ -13,7 +13,7 @@ public class Student extends Person implements Learner{
         this.totalStudyTime += numberOfHours;
     }
 
-    public Double getTotalStudyTime() {
+    public double getTotalStudyTime() {
         return totalStudyTime;
     }
 }

@@ -7,19 +7,8 @@ public class TestInstructor {
 
     @Test
     public void testImplementation(){
-
-        Instructor instructor = new Instructor("", 0);
+        Instructor instructor = new Instructor("Josh", 3);
         Assert.assertTrue(instructor instanceof Teacher);
-
-//        String expectedName = "Arnold";
-//        long expectedId = 42;
-//        Teacher teacher = new Teacher() {};
-//        Learner learner = new Learner() {};
-//
-//        Instructor test = new Instructor(expectedName, expectedId);
-//
-//        Assert.assertEquals(expectedName, Teacher.teach(learner, 39.8));
-//        Assert.assertEquals(expectedId, test.getId());
     }
 
     @Test
@@ -27,6 +16,39 @@ public class TestInstructor {
 
         Instructor instructor = new Instructor("", 0);
         Assert.assertTrue(instructor instanceof Person);
+    }
+
+    @Test
+    public void testTeach(){
+
+        Instructor instructor = new Instructor("roxy", 16);
+        Student student = new Student("eddie",22);
+
+        instructor.teach(student,40);
+
+        Double expected = 40.0;
+        Double actual = student.getTotalStudyTime();
+
+        Assert.assertEquals(expected,actual);
+    }
+
+    @Test
+    public void testLecture(){
+
+        Instructor instructor = new Instructor("tammy", 22);
+        Student greg = new Student("greg", 36);
+        Student mikko = new Student("mikko", 33);
+
+        instructor.lecture(new Student[]{greg, mikko},40);
+
+        Double expected = 20.0;
+        Double actual = greg.getTotalStudyTime();
+        Assert.assertEquals(expected,actual);
+
+        actual = mikko.getTotalStudyTime();
+        Assert.assertEquals(expected,actual);
+
+
     }
 
 
