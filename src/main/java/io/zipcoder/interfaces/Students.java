@@ -1,6 +1,6 @@
 package io.zipcoder.interfaces;
 
-public final class Students extends People{
+public final class Students extends People {
 
     private static final Students INSTANCE = new Students();
 
@@ -9,11 +9,5 @@ public final class Students extends People{
 
     public static Students getInstance(){
         return INSTANCE;
-
     }
-
-
-
-
-
 }

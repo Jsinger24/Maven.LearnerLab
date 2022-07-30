@@ -6,7 +6,6 @@ import org.junit.Test;
 public class TestInstructors {
 
     @Test
-
     public void testInstructorsSingleton(){
 
         Instructor instructor = new Instructor("Liz",12345);

@@ -5,6 +5,8 @@ public class Instructor extends Person implements Teacher {
 
     public Instructor(String name, long id) {
         super(name, id);
+        Instructors.getInstance().add(this);
+
     }
 
     @Override

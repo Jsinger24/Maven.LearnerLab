@@ -32,17 +32,17 @@ public class TestStudent {
         }
 
 
-    @Test
-    public void testLearn(){
-
-//        Double expectedNumberOfHours = 10.0;
-//
-//        Student test = new Student("JD", 1234);
-//
-//        test.learn(expectedNumberOfHours);
-//
-//        Assert.assertEquals(expectedNumberOfHours,test.getTotalStudyTime());
-
-
-    }
+//    @Test
+////    public void testLearn(){
+////
+//////        Double expectedNumberOfHours = 10.0;
+//////
+//////        Student test = new Student("JD", 1234);
+//////
+//////        test.learn(expectedNumberOfHours);
+//////
+//////        Assert.assertEquals(expectedNumberOfHours,test.getTotalStudyTime());
+////
+////
+////    }
 }
