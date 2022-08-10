@@ -26,6 +26,7 @@ public class TestStudent {
             Person inheritTest = new Student(expected,expectedId);
 
             Assert.assertEquals(expected, inheritTest.getName());
+
             Assert.assertEquals(expectedId, inheritTest.getId());
 
 
